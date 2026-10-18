@@ -1,18 +1,20 @@
 [app]
-title = ApexTitan
+title = Apex Titan
 package.name = apextitan
-package.domain = org.test
+package.domain = org.sterc222.apextitan
 source.dir = .
-source.include_exts = py,png,jpg,ttf,wav,mp3,ogg
+source.include_exts = py,png,jpg,kv,atlas,wav,ttf
 version = 0.1
-requirements = python3==3.10.12,hostpython3==3.10.12,kivy==2.3.0,pyjnius==1.5.0,pygame
+requirements = hostpython3==3.10.14, python3==3.10.14, pygame
 orientation = portrait
 fullscreen = 1
+
+android.permissions = VIBRATE
 android.api = 33
 android.minapi = 21
-android.ndk = 25b
 android.archs = arm64-v8a
 android.allow_backup = True
+p4a.branch = master
 
 [buildozer]
 log_level = 2
